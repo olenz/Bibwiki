@@ -85,6 +85,32 @@ $wgBibCiteMessages['cs'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Invalid <code>&lt;references&gt;</code> tag; no parameters are allowed, use <code>&lt;references /&gt;</code>',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Došla označení zpětných odkazů, přidejte jich několik do zprávy „''bibcite_references_link_many_format_backlink_labels''“",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 
 $wgBibCiteMessages['de'] = array(
@@ -110,7 +136,33 @@ $wgBibCiteMessages['de'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL	 => 'Eine Referenz der Form <code><nowiki><ref name="…"/></nowiki></code> wird öfter ' .
 									'benutzt als Buchstaben vorhanden sind. Ein Administrator muss <nowiki>[[MediaWiki:cite references link many format backlink labels]]</nowiki> um weitere Buchstaben/Zeichen ergänzen.',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_TEXT            => 'Eine Referenz der Form <code><nowiki><ref name="…"/></nowiki></code> wird verwendet, ohne definiert worden zu sein.',
-	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX-Eintrag nicht gefunden: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 
 $wgBibCiteMessages['fr'] = array(
@@ -132,6 +184,32 @@ $wgBibCiteMessages['fr'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Exécution hors des étiquettes personnalisées, définissez plus dans le message « bibcite_references_link_many_format_backlink_labels »",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_TEXT            => 'Aucun texte indiqué.',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['he'] = array(
 	/*
@@ -158,6 +236,32 @@ $wgBibCiteMessages['he'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "נגמרו תוויות הקישורים המותאמים אישית, אנא הגדירו נוספים בהודעת המערכת \"''bibcite_references_link_many_format_backlink_labels''\"",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_TEXT            => 'לא נכתב טקסט.',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['id'] = array(
 	# Internal errors
@@ -177,6 +281,32 @@ $wgBibCiteMessages['id'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Paramater tak sah; seharusnya tidak ada',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Kehabisan label pralana balik, tambakan pada pesan sistem \"''bibcite_references_link_many_format_backlink_labels''\"",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['it'] = array(
 
@@ -198,6 +328,32 @@ $wgBibCiteMessages['it'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Errore nell\'uso del marcatore <code>&lt;references&gt;</code>: parametri non ammessi, usare il marcatore <code>&lt;references /&gt;</code>',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Etichette di rimando personalizzate esaurite, aumentarne il numero nel messaggio \"''bibcite_references_link_many_format_backlink_labels''\"",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 
 );
 
@@ -222,6 +378,32 @@ $wgBibCiteMessages['ja'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => '無効な <code>&lt;references&gt;</code> タグ: 引数のあるタグは使用できません。 <code>&lt;references /&gt;</code> を用いてください。',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "バックリンクラベルが使用できる個数を超えました。\"''bibcite_references_link_many_format_backlink_labels''\" メッセージでの定義を増やしてください。",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 
 $wgBibCiteMessages['kk-kz'] = array(
@@ -248,6 +430,32 @@ $wgBibCiteMessages['kk-kz'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Жарамсыз <code>&lt;references&gt;</code> белгіше; еш баптар рұқсат етілмейді, былай <code>&lt;references /&gt;</code> қолданыңыз',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => 'Қосымша белгілердің саны бітті, одан әрі көбірек «\'\'bibcite_references_link_many_format_backlink_labels\'\'» жүйе хабарында белгілеңіз',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['kk-tr'] = array(
 	/*
@@ -273,6 +481,32 @@ $wgBibCiteMessages['kk-tr'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Jaramsız <code>&lt;references&gt;</code> belgişe; eş baptar ruqsat etilmeýdi, bılaý <code>&lt;references /&gt;</code> qoldanıñız',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => 'Qosımşa belgilerdiñ sanı bitti, odan äri köbirek «\'\'bibcite_references_link_many_format_backlink_labels\'\'» jüýe xabarında belgileñiz',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['kk-cn'] = array(
 	/*
@@ -298,6 +532,32 @@ $wgBibCiteMessages['kk-cn'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'جارامسىز <code>&lt;references&gt;</code> بەلگٸشە; ەش باپتار رۇقسات ەتٸلمەيدٸ, بىلاي <code>&lt;references /&gt;</code> قولدانىڭىز',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => 'قوسىمشا بەلگٸلەردٸڭ سانى بٸتتٸ, ودان ٵرٸ كٶبٸرەك «\'\'bibcite_references_link_many_format_backlink_labels\'\'» جٷيە حابارىندا بەلگٸلەڭٸز',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['kk'] = $wgBibCiteMessages['kk-kz'];
 $wgBibCiteMessages['lt'] = array(
@@ -318,6 +578,32 @@ $wgBibCiteMessages['lt'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Neleistina <code>&lt;references&gt;</code> gairė; neleidžiami jokie parametrai, naudokite <code>&lt;references /&gt;</code>',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Baigėsi antraštės, nurodykite daugiau \"''bibcite_references_link_many_format_backlink_labels''\" sisteminiame tekste",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['nl'] = array(
 	/*
@@ -343,6 +629,32 @@ $wgBibCiteMessages['nl'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Onjuiste tag <code>&lt;references&gt;</code>; parameters zijn niet toegestaan, gebruik <code>&lt;references /&gt;</code>',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Ran out of custom backlink labels, define more in the \"''bibcite_references_link_many_format_backlink_labels''\" message",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['pt'] = array(
 	/*
@@ -369,6 +681,32 @@ $wgBibCiteMessages['pt'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Código <code>&lt;references&gt;</code> inválido; não são permitidos parâmetros. Utilize como <code>&lt;references /&gt;</code>',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Ran out of custom backlink labels, define more in the \"''bibcite_references_link_many_format_backlink_labels''\" message",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['ru'] = array(
 	/*
@@ -399,6 +737,32 @@ $wgBibCiteMessages['ru'] = array(
 	   Output formatting
 	*/
 	'bibcite_references_link_many_format_backlink_labels' => 'а б в г д е ё ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я',
+		/*
+		   Output formatting
+		*/
+		'bibcite_reference_link_key_with_num' => '$1_$2',
+		# Ids produced by <ref>
+		'bibcite_reference_link_prefix'       => '_ref-',
+		'bibcite_reference_link_suffix'       => '',
+		# Ids produced by <references>
+		'bibcite_references_link_prefix'      => '_note-',
+		'bibcite_references_link_suffix'      => '',
+
+		'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+		'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+		'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+		'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+		'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+		'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+		# An item from this set is passed as $3 in the message above
+		'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+		'bibcite_references_link_many_sep'                    => " ",
+		'bibcite_references_link_many_and'                    => " ",
+
+		# Although I could just use # instead of <li> above and nothing here that
+		# will break on input that contains linebreaks
+		'bibcite_references_prefix' => '<ol class="references">',
+		'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['sk'] = array(
 	/*
@@ -424,6 +788,32 @@ $wgBibCiteMessages['sk'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => 'Neplatné parametre; neočakávli sa žiadne',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "Minuli sa generované návestia spätných odkazov, definujte viac v správe \"''bibcite_references_link_many_format_backlink_labels''\"",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['yue'] = array(
 	/*
@@ -449,6 +839,32 @@ $wgBibCiteMessages['yue'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => '無效嘅參數; 唔需要有嘢',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "用晒啲自定返回標籤, 響 \"''bibcite_references_link_many_format_backlink_labels''\" 信息再整多啲",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['zh-hans'] = array(
 	/*
@@ -474,6 +890,32 @@ $wgBibCiteMessages['zh-hans'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => '非法参数；需求为空',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "自定义后退标签已经用完了，现在可在标签 \"''bibcite_references_link_many_format_backlink_labels''\" 定义更多信息",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['zh-hant'] = array(
 	/*
@@ -499,6 +941,32 @@ $wgBibCiteMessages['zh-hant'] = array(
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_INVALID_PARAMETERS => '非法參數；需求為空',
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCES_NO_BACKLINK_LABEL  => "自訂後退標籤已經用完了，現在可在標籤 \"''bibcite_references_link_many_format_backlink_labels''\" 定義更多信息",
 	'bibcite_error_' . BIBCITE_ERROR_REFERENCE_NOT_FOUND           => 'BibTeX record not found: %1',
+	/*
+	   Output formatting
+	*/
+	'bibcite_reference_link_key_with_num' => '$1_$2',
+	# Ids produced by <ref>
+	'bibcite_reference_link_prefix'       => '_ref-',
+	'bibcite_reference_link_suffix'       => '',
+	# Ids produced by <references>
+	'bibcite_references_link_prefix'      => '_note-',
+	'bibcite_references_link_suffix'      => '',
+
+	'bibcite_reference_link'                              => '<sup id="$1" class="reference">[[#$2|<nowiki>[</nowiki>$3<nowiki>]</nowiki>]]</sup>',
+	'bibcite_references_link_one'                         => '<li id="$1">[[#$2|↑]] $3 $4</li>',
+	'bibcite_references_link_many'                        => '<li id="$1">↑ $2 $3 $4</li>',
+	'bibcite_references_link_many_format'                 => '<sup>[[#$1|$2]]</sup>',
+	'bibcite_references_bib_backlink'				      => '<sup>[[$1|$2]]</sup>',
+	'bibcite_references_bib_backlink_fullurl'		      => '<sup class="reference">[$1 $2]</sup>',
+	# An item from this set is passed as $3 in the message above
+	'bibcite_references_link_many_format_backlink_labels' => 'a b c d e f g h i j k l m n o p q r s t u v w x y z',
+	'bibcite_references_link_many_sep'                    => " ",
+	'bibcite_references_link_many_and'                    => " ",
+
+	# Although I could just use # instead of <li> above and nothing here that
+	# will break on input that contains linebreaks
+	'bibcite_references_prefix' => '<ol class="references">',
+	'bibcite_references_suffix' => '</ol>',
 );
 $wgBibCiteMessages['zh'] = $wgBibCiteMessages['zh-hans'];
 $wgBibCiteMessages['zh-cn'] = $wgBibCiteMessages['zh-hans'];
