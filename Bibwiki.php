@@ -8,8 +8,8 @@ if (!defined('MEDIAWIKI'))
  * @addtogroup Extensions
  * @package Bibwiki
  *
- * @link http://www.plaschg.net/bibwiki Homepage
- * @link http://www.plaschg.net/bibwiki/docs Code documentation
+ * @link http://www.serenethinking.com/bibwiki/ Homepage
+ * @link https://github.com/wplaschg/Bibwiki Main code repository
  * @author Wolfgang Plaschg <wpl@gmx.net>
  * @copyright Copyright (C) 2007 Wolfgang Plaschg
  *
@@ -38,7 +38,7 @@ $wgHooks['RenderPageTitle'][] = 'wfRenderPageTitle';
 $wgExtensionCredits['specialpage'][] = array(
        'name' => 'Bibwiki',
        'author' =>'Wolfgang Plaschg, OSBiB by Mark Grimshaw, BibCite.php based on Cite.php by Ævar Arnfjörð Bjarmason', 
-       'url' => 'http://www.plaschg.net/bibwiki', 
+       'url' => 'http://www.serenethinking.com/bibwiki/', 
        'description' => 'Extension for managing BibTeX Databases'
        );
 
